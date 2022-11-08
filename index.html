@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio Caio Cesar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="menu">
+        <h1 class="menuLogo">FallKyle</h1>
+        <div class="menuDropdown">
+            <div id="menuDropdown1"></div>
+            <div id="menuDropdown2"></div>
+            <div id="menuDropdown3"></div>
+            <div id="menuDropdown4"></div>
+            <div id="menuDropdown5"></div>
+            <div id="menuDropdown6"></div>
+            <div id="menuDropdown7"></div>
+
+        </div>
+        <ul class="menuLista">
+            <li><a class="menuItem" href="#home">Home</a></li>
+            <li><a class="menuItem" href="#sobre">Sobre mim</a></li>
+            <li><a class="menuItem" href="#contato">Contato</a></li>
+            <li><a class="menuItem" href="#formacao">Formação</a></li>
+            <li><a  class="menuItem" href="#atuacao-profissional">Atuação Profissional</a></li>
+            <li><a class="menuItem" href="#portifolio">Portifolio</a></li>
+            <li><a class="menuItem" href="#tecnologia">Descricao Tecnologia</a></li>
+        </ul>
+    </header>
+    <section id="home"></section>
+    <section id="sobre"></section>
+    <section id="contato">
+        <h1>Contato</h1>
+        <form class="form">
+            <div class="divfield">
+                <h4>Nome:</h4>
+                <input className='field' type="text" name="nome" placeholder="Nome"/>
+            </div>
+            <div class="divfield">
+                <h4>E-mail:</h4>
+                <input className='field' type="text" name="email" placeholder="E-mail"/>
+            </div>
+            <div className='divfield'>
+                <h4>Data de Nascimento:</h4>
+                <input className='field' type="date" name="data_de_nascimento" placeholder="Data de Nascimento"/>
+            </div>
+            <div className='divfield'>
+                <h4>Telefone:</h4>
+                <input className='field' type="text" name="telefone" placeholder="Telefone"/>
+            </div>
+            <div className='divfield'>
+                <h4>Celular:</h4>
+                <input className='field' type="text" name="celular" placeholder="Celular"/>
+            </div>
+            <input type="submit" name="submit" value="Adicionar Contato"/>
+            <input type="reset" value="Limpar"/>
+        </form>
+    </section>
+    <section id="formacao"></section>
+    <section id="atuacao-profissional"></section>
+    <section id="portifolio"></section>
+    <section id="tecnologia"></section>
+</body>
+</html>

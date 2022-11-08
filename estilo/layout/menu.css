@@ -1,0 +1,32 @@
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.menuLista{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menuItem{
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+}
+.menuItem:hover{
+    background: rgb(121, 172, 248);
+    color: white;
+    cursor: pointer;
+}
+.icon{
+    height: 10px;
+    width: 10px;
+}
+
+@media (max-width: 900px){
+    .menuLista{ display: none;}
+}
