@@ -42,7 +42,7 @@ body{
     .menuLista{ display: none;}
     .menuDropdown{
         display: grid;
-        gap: -7px;
+        gap: 7px;
     }
     #menuDropdown1, #menuDropdown2, #menuDropdown3{
         background: var(--c4);
@@ -50,7 +50,36 @@ body{
         width: 35px;
         border-radius: 3px;
     }
-    .menuDropdown.active{
-        gap: 0px;
+    #menuDropdown1.active,#menuDropdown2.active,#menuDropdown3.active{
+        position: absolute;
+        top: 50%;
+    }
+    #menuDropdown1.active,#menuDropdown2.active{
+        transform: rotate(45deg);
+    }
+    #menuDropdown3.active{
+        transform: rotate(135deg);
+    }
+    @keyframes movedrop1{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(45deg);
+        }
+    }
+    @keyframes movedrop3{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(135deg);
+        }
+    }
+    .animationdrop1{
+        animation: movedrop1 300ms;
+    }
+    .animationdrop3{
+        animation: movedrop3 300ms;
     }
 }
