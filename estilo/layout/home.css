@@ -1,0 +1,13 @@
+@import url('../color.css');
+.homecontainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0,-50%);
+}
+.homecontainerTexto{
+    font-size: 72px;
+}
+span{
+    color: var(--c4);
+}
