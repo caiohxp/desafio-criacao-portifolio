@@ -9,10 +9,6 @@ function toggleMenu(){
     const menuDrop3 = document.querySelector('#menuDropdown3');
     menu.classList.toggle('active')
     menuLista.classList.toggle('active')
-    menuDrop.classList.toggle('active')
-    menuDrop1.classList.toggle('active')
-    menuDrop2.classList.toggle('active')
-    menuDrop3.classList.toggle('active')
     menuDrop1.classList.toggle('animationdrop1')
     menuDrop2.classList.toggle('animationdrop1')
     menuDrop3.classList.toggle('animationdrop3')

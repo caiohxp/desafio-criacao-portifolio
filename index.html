@@ -33,31 +33,27 @@
     </section>
     <section id="sobre"></section>
     <section id="contato">
-        <h1>Contato</h1>
-        <form class="form">
-            <div class="divfield">
-                <h4>Nome:</h4>
-                <input className='field' type="text" name="nome" placeholder="Nome"/>
-            </div>
-            <div class="divfield">
-                <h4>E-mail:</h4>
-                <input className='field' type="text" name="email" placeholder="E-mail"/>
-            </div>
-            <div className='divfield'>
-                <h4>Data de Nascimento:</h4>
-                <input className='field' type="date" name="data_de_nascimento" placeholder="Data de Nascimento"/>
-            </div>
-            <div className='divfield'>
-                <h4>Telefone:</h4>
-                <input className='field' type="text" name="telefone" placeholder="Telefone"/>
-            </div>
-            <div className='divfield'>
-                <h4>Celular:</h4>
-                <input className='field' type="text" name="celular" placeholder="Celular"/>
-            </div>
-            <input type="submit" name="submit" value="Adicionar Contato"/>
-            <input type="reset" value="Limpar"/>
-        </form>
+        <div class="contato">
+            <h1>Contato</h1>
+            <form class="form">
+                <input class='formField' type="text" name="nome" placeholder="Nome"/>
+                <input class='formField' type="text" name="email" placeholder="E-mail"/>
+                <div class='divFormField'>
+                    <h4>Data de Nascimento:</h4>
+                    <input class='formField' type="date" name="data_de_nascimento" placeholder="Data de Nascimento"/>
+                </div>
+                <div class='divFormField'>
+                    <h4>Telefone:</h4>
+                    <input class='formField' type="text" name="telefone" placeholder="Telefone"/>
+                </div>
+                <div class='divformField'>
+                    <h4>Celular:</h4>
+                    <input class='formField' type="text" name="celular" placeholder="Celular"/>
+                </div>
+                <input type="submit" name="submit" value="Adicionar Contato"/>
+                <input type="reset" value="Limpar"/>
+            </form>
+        </div>
     </section>
     <section id="formacao"></section>
     <section id="atuacao-profissional"></section>
