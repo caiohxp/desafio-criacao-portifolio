@@ -6,3 +6,13 @@
 section{
     height: 100vh;
 }
+.sectionTitle{
+    font-size: 40px;
+    text-align: center;
+}
+.contentDiv{
+}
+.contentSection{
+    display: grid;
+    place-items: center;
+}

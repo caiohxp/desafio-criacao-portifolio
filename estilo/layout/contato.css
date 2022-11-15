@@ -1,19 +1,4 @@
 @import url('../color.css');
-#contato{
-    display: grid;
-    place-items: center;
-
-}
-.contato{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 5%;
-}
-.contatoTitle{
-    font-size: 36px;
-}
 .form{
     height: 400px;
     width: 350px;
