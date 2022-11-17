@@ -2,19 +2,18 @@
 .form{
     height: 400px;
     width: 350px;
-    background: var(--c3);
     border-radius: 10px;
-    border: solid 2px black;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     padding: 30px 50px;
-    margin-top: 20px;
 }
 .formField{
     height: 30px;
     border-radius: 5px;
-    border: none;
+    border: solid 2px var(--c1);
+    background: var(--c2);
+    color: var(--stand);
 }
 .divFormField{
     display: flex;
@@ -25,7 +24,7 @@
     width: 50%;
     height: 35px;
     border-radius: 10px;
-    background: var(--c1);
+    background: var(--c3);
     color: white;
     align-self: center;
 }
