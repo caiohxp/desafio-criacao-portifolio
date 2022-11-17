@@ -2,6 +2,7 @@
 @import url('estilo/layout/menu.css');
 @import url('estilo/layout/home.css');
 @import url('estilo/layout/contato.css');
+@import url('estilo/color.css');
 
 section{
     height: 100vh;
@@ -9,8 +10,12 @@ section{
 .sectionTitle{
     font-size: 40px;
     text-align: center;
+    background: var(--c3);
+    border-radius: 20px 20px 0px 0px;
 }
 .contentDiv{
+    border: solid 3px var(--c3);
+    border-radius: 25px;
 }
 .contentSection{
     display: grid;
