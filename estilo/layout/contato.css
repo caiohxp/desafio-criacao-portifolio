@@ -27,6 +27,7 @@
     background: var(--c3);
     color: white;
     align-self: center;
+    border: none;
 }
 .buttonForm:hover{
     cursor: pointer;
