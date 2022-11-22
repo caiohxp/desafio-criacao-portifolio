@@ -5,7 +5,6 @@ window.addEventListener("scroll", (event) => {
     var windowHeight = window.innerHeight
     || document.documentElement.clientHeight
     || document.body.clientHeight;
-    
     if(scroll < windowHeight){
         itensMenu.forEach((i,n) => {
             n === 0 ? i.style.color = cor : i.style.color = "white"
