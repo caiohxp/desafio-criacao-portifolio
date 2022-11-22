@@ -1,9 +1,6 @@
 @import url(../color.css);
 
-body{
-    background: var(--c2);
-    color: var(--stand);
-}
+
 .menu{
     display: flex;
     justify-content: space-around;

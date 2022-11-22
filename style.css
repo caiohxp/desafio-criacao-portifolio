@@ -4,17 +4,21 @@
 @import url('estilo/layout/contato.css');
 @import url('estilo/color.css');
 
+body{
+    color: var(--stand);
+}
 section{
     height: 100vh;
+    background: var(--c2);
 }
 .sectionTitle{
     font-size: 40px;
     text-align: center;
-    background: var(--c3);
+    background: var(--c5);
     border-radius: 20px 20px 0px 0px;
 }
 .contentDiv{
-    border: solid 3px var(--c3);
+    border: solid 3px var(--c5);
     border-radius: 25px;
     background: var(--c1);
 }
@@ -23,7 +27,12 @@ section{
     place-items: center;
 }
 .contentInfo{
-    padding: 20px;
+    padding: 30px;
+    color: var(--c5);
+}
+footer{
+    width: 100%;
+    background: var(--c1);
 }
 .footer-icon{
     height: 10%;

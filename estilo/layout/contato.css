@@ -7,6 +7,7 @@
     justify-content: space-around;
     flex-direction: column;
     padding: 30px 50px;
+    color: var(--c5);
 }
 .formField{
     height: 30px;
@@ -24,13 +25,13 @@
     width: 50%;
     height: 35px;
     border-radius: 10px;
-    background: var(--c3);
+    background: var(--c5);
     color: white;
     align-self: center;
     border: none;
 }
 .buttonForm:hover{
     cursor: pointer;
-    background: black;
-    color: var(--c4);
+    background: var(--c0);
+    color: var(--c5);
 }
