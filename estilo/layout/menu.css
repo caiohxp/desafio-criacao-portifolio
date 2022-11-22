@@ -12,7 +12,6 @@
 .menuLista{
 }
 .menuItem{
-    padding: 30px 10px;
     color: var(--stand);
     text-transform: uppercase;
 }
@@ -57,10 +56,13 @@
         border-radius: 3px;
     }
     .menu.active .menuDropdown #menuDropdown1,.menu.active .menuDropdown #menuDropdown2,.menu.active .menuDropdown #menuDropdown3{
-        position: absolute;
     }
-    .menu.active .menuDropdown #menuDropdown1,.menu.active .menuDropdown #menuDropdown2{
+    .menu.active .menuDropdown #menuDropdown1{
         transform: rotate(45deg);
+    }
+    .menu.active .menuDropdown #menuDropdown2{
+        width: 0px;
+        height: 0px;
     }
     .menu.active .menuDropdown #menuDropdown3{
         transform: rotate(135deg);
