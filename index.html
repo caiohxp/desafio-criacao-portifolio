@@ -12,10 +12,12 @@
     <header class="navbar navbar-expand-lg navbar-dark menu">
         <div class="container-fluid">
             <h1 class="menuLogo"><span>C</span>aio <span>C</span>esar</h1>
-            <button type="button" class="navbar-toggler menuDropdown" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <div id="menuDropdown1"></div>
-                <div id="menuDropdown2"></div>
-                <div id="menuDropdown3"></div>
+            <button type="button" class="menuDropdown navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <input type="checkbox" id="m-check">
+                <label for="m-check" onclick="toggleMenu()" class="m">
+                <div class="stop" id="menuDropdown1"></div>
+                <div class="stop" id="menuDropdown2"></div>
+                <div class="stop" id="menuDropdown3"></div>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto menuLista">
@@ -41,10 +43,10 @@
             <a class="homecontainerTexto homecontainerTexto--button" href="#portfolio">PORTFOLIO</a>
         </div>
     </section>
-    <section id="sobre" class="contentSection container">
+    <section id="sobre" class="container">
         <div class="contentDiv">
             <h1 class="sectionTitle">Sobre Mim</h1>
-            <h3 style="text-align: center;" class="contentInfo">Eu estudo programação desde os 14 anos. Trabalho <br>
+            <h3 style="text-align: center;" class="p-3">Eu estudo programação desde os 14 anos. Trabalho <br>
                 atualmente como assistente de TI na UniSaoJose. Meu<br>
                 objetivo é atuar em HomeOffice na área de programação<br>
                 para que eu possa seguir minha graduação ao mesmo <br>

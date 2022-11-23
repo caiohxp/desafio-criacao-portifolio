@@ -9,8 +9,8 @@ body{
     background: var(--c2);
 }
 section{
-    height: 100vh;
     background: var(--c2);
+    height: 100vh;
 }
 .sectionTitle{
     font-size: 40px;
@@ -26,10 +26,6 @@ section{
 .contentSection{
     display: grid;
     place-items: center;
-}
-.contentInfo{
-    padding: 30px;
-    color: var(--c5);
 }
 footer{
     width: 100%;
