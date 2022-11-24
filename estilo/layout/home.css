@@ -6,24 +6,71 @@
     flex-wrap: wrap;
 }
 .homecontainer{
-    display: grid;
-    gap: 35px;
+    color: transparent;
+}
+.homecontainer h2{
+    animation: text_reveal 1s ease forwards;
+    animation-delay: 3.5s;
+}
+.homecontainer h2 > span:nth-child(1){
+    animation: text_reveal_crimson 0.5s ease forwards;
+    animation-delay: 4s;
+}
+.homecontainer h2 > span:nth-child(2){
+    animation: text_reveal_cyan 0.5s ease forwards;
+    animation-delay: 4.5s;
 }
 .homecontainerTexto{
     font-size: 72px;
+    display: block;
+	width: fit-content;
+	font-size: 4rem;
+	position: relative;
+	animation: text_reveal 0.5s ease forwards;
+	animation-delay: 1s;
 }
 .homecontainerTexto--button{
     color: var(--stand);
-    background: var(--c5);
-    border-radius: 10px;
-    border: solid 3px var(--stand);
+    border: solid 3px var(--c4);
 }
-span{
-    color: var(--c5);
+.homecontainerTexto--button:hover{
+    background: var(--c5);
+    border-color: var(--c5);
+    transition-duration: 300ms;
+    color: var(--c2);
+}
+.homecontainerTexto:nth-child(1) {
+	animation-delay: 1s;
+}
+.homecontainerTexto:nth-child(2) {
+	animation-delay: 2s;
+}
+.homecontainerTexto:nth-child(3) {
+	animation: text_reveal_crimson 0.5s ease forwards;
+	animation-delay: 3s;
+}
+.homecontainerTexto span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background-color: var(--c5);
+	animation: text_reveal_box 1s ease;
+	animation-delay: 0.5s;
+}
+.homecontainerTexto:nth-child(1) span {
+	animation-delay: 0.5s;
+}
+.homecontainerTexto:nth-child(2) span {
+	animation-delay: 1.5s;
+}
+.homecontainerTexto:nth-child(3) span {
+	animation-delay: 2.5s;
 }
 .divhome-img{
     border-radius: 50%;
-    border-top: solid 5px var(--c3);
+    border-top: solid 5px var(--c5);
     border-bottom: solid 5px var(--c4);
     border-right: none;
     border-left: none;
@@ -40,7 +87,33 @@ span{
         transform: rotate(360deg);
     }
 }
-
+@keyframes text_reveal_box {
+	50% {
+		width: 100%;
+		left: 0;
+	}
+	100% {
+		width: 0;
+		left: 100%;
+	}
+}
+@keyframes text_reveal {
+	100% {
+		color: var(--stand);
+	}
+}
+@keyframes text_reveal_crimson {
+	100% {
+		color: var(--c5);
+		font-weight: 500;
+	}
+}
+@keyframes text_reveal_cyan {
+	100% {
+		color: var(--c4);
+		font-weight: 500;
+	}
+}
 @media (max-width: 1023px){
     #home{
         height: 150vh;

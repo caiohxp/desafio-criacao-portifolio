@@ -10,7 +10,7 @@ body{
 }
 section{
     background: var(--c2);
-    height: 100vh;
+    padding: 100px 0;
 }
 .sectionTitle{
     font-size: 40px;

@@ -9,6 +9,12 @@
     font-size: medium;
     z-index: 10;
 }
+.menuLogo::first-letter{
+    color: var(--c4);
+}
+.menuLogo > span{
+    color: var(--c5);
+}
 .menuLista{
 }
 .menuItem{
@@ -70,10 +76,12 @@
     }
     #m-check:checked + label div:first-child{
         transform: rotate(45deg);
+        background: var(--c5);
         transition-delay: 0.2s;
     }
     #m-check:checked + label div:last-child{
         transform: rotate(135deg);
+        background: var(--c5);
         transition-delay: 0.2s;
     }
 }
