@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="navbar navbar-expand-lg navbar-dark menu">
         <div class="container-fluid">
             <h1 class="menuLogo">Caio <span>C</span>esar</h1>
-            <button type="button" class="menuDropdown navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button type="button" class="menuDropdown navbar-toggler" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
                 <input type="checkbox" id="m-check">
                 <label for="m-check" onclick="toggleMenu()" class="m">
-                <div class="stop" id="menuDropdown1"></div>
-                <div class="stop" id="menuDropdown2"></div>
-                <div class="stop" id="menuDropdown3"></div>
+                    <div class="stop" id="menuDropdown1"></div>
+                    <div class="stop" id="menuDropdown2"></div>
+                    <div class="stop" id="menuDropdown3"></div>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto menuLista">
@@ -46,41 +49,69 @@
     <section id="sobre">
         <div class="container">
             <div class="contentDiv">
+                <span>Sobre Mim</span>
                 <h1 class="sectionTitle">Sobre Mim</h1>
-                <h3 style="text-align: center;" class="p-3">Eu estudo programação desde os 14 anos. Trabalho <br>
-                    atualmente como assistente de TI na UniSaoJose. Meu<br>
-                    objetivo é atuar em HomeOffice na área de programação<br>
-                    para que eu possa seguir minha graduação ao mesmo <br>
-                    tempo que trabalho na área que me sinto mais avontade.<br>
-                    No momento meu foco está sendo o desenvolvimento WEB.</h3>
+                <div>
+                    <div class="content ps-lg-4 d-flex flex-column justify-content-center">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <ul>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>Caio Cesar</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong>
+                                        <span>www.example.com</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>(21)98419-6040</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Rio de Janeiro, RJ</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <ul>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>23</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span>
+                                    </li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
+                                        <span>caiocesar.ccomp@gmail.com</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong>
+                                        <span>Available</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 style="text-align: center;">Eu estudo programação desde os 14 anos. Trabalho <br>
+                        atualmente como assistente de TI na UniSaoJose. Meu<br>
+                        objetivo é atuar em HomeOffice na área de programação<br>
+                        para que eu possa seguir minha graduação ao mesmo <br>
+                        tempo que trabalho na área que me sinto mais avontade.<br>
+                        No momento meu foco está sendo o desenvolvimento WEB.</h3>
+                </div>
             </div>
-        </div>
     </section>
     <section id="contato" class="contentSection container">
         <div class="contentDiv">
+            <span>Contato</span>
             <h1 class="sectionTitle">Contato</h1>
             <form class="form">
-                <input class='formField' type="text" name="nome" placeholder="Nome"/>
-                <input class='formField' type="text" name="email" placeholder="E-mail"/>
+                <input class='formField' type="text" name="nome" placeholder="Nome" />
+                <input class='formField' type="text" name="email" placeholder="E-mail" />
                 <div class='divFormField'>
                     <h4 class="titleFormField">Data de Nascimento:</h4>
-                    <input class='formField' type="date" name="data_de_nascimento" placeholder="Data de Nascimento"/>
+                    <input class='formField' type="date" name="data_de_nascimento" placeholder="Data de Nascimento" />
                 </div>
                 <div class='divFormField'>
                     <h4 class="titleFormField">Telefone:</h4>
-                    <input class='formField' type="text" name="telefone" placeholder="Ex: (21)9999-9999"/>
+                    <input class='formField' type="text" name="telefone" placeholder="Ex: (21)9999-9999" />
                 </div>
                 <div class='divFormField'>
                     <h4 class="titleFormField">Celular:</h4>
-                    <input class='formField' type="text" name="celular" placeholder="Ex: (21)99999-9999"/>
+                    <input class='formField' type="text" name="celular" placeholder="Ex: (21)99999-9999" />
                 </div>
-                <input class="buttonForm" type="submit" name="submit" value="Adicionar Contato"/>
-                <input class="buttonForm" type="reset" value="Limpar"/>
+                <input class="buttonForm" type="submit" name="submit" value="Adicionar Contato" />
+                <input class="buttonForm" type="reset" value="Limpar" />
             </form>
         </div>
     </section>
     <section id="formacao" class="contentSection container">
         <div class="contentDiv">
+            <span>Formação</span>
             <h1 class="sectionTitle">Formação</h1>
             <div style="display: flex;">
                 <div class="contentInfo">
@@ -104,7 +135,8 @@
     </section>
     <section class="contentSection container" id="atuacao-profissional">
         <div class="contentDiv">
-            <h1 class="sectionTitle">Atuação Profissional</h1>
+            <span>Experience</span>
+            <h1 class="sectionTitle">Experiência</h1>
             <div>
                 <div class="contentInfo">
                     <h2>Monitor de design de games e aplicativos</h2>
@@ -122,13 +154,15 @@
                     <h2>Assistente de TI</h2>
                     <h3>UniSaoJose</h3>
                     <h3>Tipo: CLT</h3>
-                    <h3>Descrição: Auxilio na manutenção do sistema, da página e suporte para outros setores da universidade</h3>
+                    <h3>Descrição: Auxilio na manutenção do sistema, da página e suporte para outros setores da
+                        universidade</h3>
                 </div>
             </div>
         </div>
     </section>
     <section class="contentSection container" id="portfolio">
         <div class="contentDiv">
+            <span>Portfolio</span>
             <h1 class="sectionTitle">Portfólio</h1>
             <a href="https://github.com/caiohxp" target="_blank">Repositório do Github</a>
             <ul>
@@ -136,8 +170,12 @@
                 <li>Project Four</li>
                 <li>Interactive Rating Component</li>
                 <li>API Contatos</li>
-                <li><p>Jogo: Inferno de Dente</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZK-WuZoV0No" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <li>
+                    <p>Jogo: Inferno de Dente</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZK-WuZoV0No"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </li>
             </ul>
         </div>
@@ -145,12 +183,15 @@
     <footer>
         <h1>Social</h1>
         <div>
-            <a href="https://www.linkedin.com/in/caiocesarsouza" target="_blank"><img class="footer-icon" src="images/Linkedin-Logo.png" alt="Linkedin" srcset=""></a>
-            <a href="https://www.instagram.com/fallcaiu/" target="_blank"><img class="footer-icon" src="images/Instagram-Logo.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/caiocesarsouza" target="_blank"><img class="footer-icon"
+                    src="images/Linkedin-Logo.png" alt="Linkedin" srcset=""></a>
+            <a href="https://www.instagram.com/fallcaiu/" target="_blank"><img class="footer-icon"
+                    src="images/Instagram-Logo.png" alt="Instagram"></a>
         </div>
     </footer>
     <script src="script/dropdown.js"></script>
     <script src="script/menu-item-color.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
