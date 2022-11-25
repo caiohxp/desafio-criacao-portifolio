@@ -17,9 +17,15 @@
 }
 .menuLista{
 }
-.menuItem{
+.nav-link{
     color: var(--stand);
     text-transform: uppercase;
+}
+.nav-link.active{
+    color: var(--c5);
+}
+.navbar-nav > .menuItem.active{
+    color: var(--c5);
 }
 .menuItem:hover{
     border-radius: 5px;
