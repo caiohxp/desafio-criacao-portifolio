@@ -1,37 +1,74 @@
 @import url('../color.css');
 .form{
-    height: 400px;
-    width: 350px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    padding: 30px 50px;
-    color: var(--c5);
+    
 }
 .formField{
-    height: 30px;
-    border-radius: 5px;
     border: solid 2px var(--c1);
     background: var(--c2);
     color: var(--stand);
+    transition: 0.3s;
+    
 }
-.divFormField{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.formFieldDados{
+    padding-left: 70px;
+    border-radius: 27px;
+}
+.textbox{
+    position: relative;
+    padding-left: 20px;
+}
+.textbox input::placeholder{
+    color: rgb(255 255 255 / 50%);
+}
+.textbox input:focus, .textbox input:valid{
+    padding-left: 20px;
+}
+.textbox input:focus ~ label, .textbox input:valid ~ label{
+    translate: 0 -34px;
+    scale: 0.825;
+    transition-duration: 0.3s;
+}
+.formField + label{
+    position: absolute;
+    display: grid;
+    place-items: center;
+    transform-origin: 0% 0%;
+    pointer-events: none;
+    top: 4px;
+    left: 4px;
+    height: 32px;
+    width: 80px;
+    border-radius: 27px;
+    background: var(--c5);
+}
+.info-box{
+    padding: 30px;
+    background: var(--c2);
+    border-radius: 10px;
+    height: 100%;
+}
+.info-box:hover > i{
+    color: var(--c5);
+}
+.info-box i{
+    font-size: 38px;
+    border-radius: 50%;
+}
+
+.social-links > div > a > i:hover{
+    color: var(--c4);
+    cursor: pointer;
 }
 .buttonForm{
-    width: 50%;
     height: 35px;
+    width: 51%;
     border-radius: 10px;
-    background: var(--c5);
     color: white;
     align-self: center;
     border: none;
+    transition: 0.3s;
 }
 .buttonForm:hover{
     cursor: pointer;
     background: var(--c0);
-    color: var(--c5);
 }

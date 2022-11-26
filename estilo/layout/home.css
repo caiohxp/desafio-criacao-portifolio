@@ -76,11 +76,27 @@
     border-left: none;
     animation: spinner 5000ms linear infinite;
 }
+.divhome-img:hover > .home-img{
+	background: linear-gradient(45deg, var(--c3),var(--c1), var(--c5));
+	color: var(--stand);
+	transition-duration: 1s;
+	letter-spacing: 0px;
+	filter: grayscale(0%);
+	cursor: pointer;
+}
 .home-img{
     filter: grayscale(80%);
     border-radius: 50%;
     animation: spinner 5000ms linear infinite;
     animation-direction: reverse;
+	background-image: url('../../images/caio.jpeg');
+	height: 400px;
+	width: 400px;
+	display: grid;
+	place-items: center;
+	color: transparent;
+	font-size: 72px;
+	letter-spacing: 2px;
 }
 @keyframes spinner{
     to{

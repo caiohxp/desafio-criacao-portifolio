@@ -27,9 +27,9 @@
 .navbar-nav > .menuItem.active{
     color: var(--c5);
 }
-.menuItem:hover{
+.nav-item:hover{
     border-radius: 5px;
-    border: 1px solid var(--c4);
+    border: 1px solid var(--c5);
     cursor: pointer;
 }
 .navbar-toggler{
