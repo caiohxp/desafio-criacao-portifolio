@@ -1,0 +1,8 @@
+@import url('../color.css');
+
+.bi-chevron-right{
+    color: var(--c5);
+}
+.img-fluid{
+    filter: drop-shadow(5px 5px 5px var(--c2));
+}

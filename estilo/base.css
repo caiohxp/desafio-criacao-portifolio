@@ -28,3 +28,6 @@ li{
 .letraCyan:hover{
 	color: var(--c4);
 }
+.letraC3{
+	color: var(--c4)
+}

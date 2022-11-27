@@ -32,6 +32,9 @@
     border: 1px solid var(--c5);
     cursor: pointer;
 }
+.colorActive{
+    color: var(--c4);
+}
 .navbar-toggler{
     padding: 0px;
     margin: 0px;

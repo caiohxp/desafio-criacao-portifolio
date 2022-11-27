@@ -1,10 +1,4 @@
 @import url('../color.css');
-#home{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
 .homecontainer{
     color: transparent;
 }
@@ -77,9 +71,9 @@
     animation: spinner 5000ms linear infinite;
 }
 .divhome-img:hover > .home-img{
-	background: linear-gradient(45deg, var(--c3),var(--c1), var(--c5));
+	background: linear-gradient(0deg, var(--c3),var(--c1), var(--c5));
 	color: var(--stand);
-	transition-duration: 1s;
+	transition-duration: 2s;
 	letter-spacing: 0px;
 	filter: grayscale(0%);
 	cursor: pointer;
