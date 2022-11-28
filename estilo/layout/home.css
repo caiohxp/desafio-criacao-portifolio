@@ -128,3 +128,9 @@
 }
 @media (max-width: 1023px){
 }
+@media (max-width: 450px){
+	.home-img{
+		height: 90vw;
+		width: 90vw;
+	}
+}

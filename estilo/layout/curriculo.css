@@ -1,6 +1,6 @@
 @import url('../color.css');
 
-.contentItem {
+.content-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
     border-left: 2px solid var(--c5);
@@ -9,11 +9,11 @@
     color: var(--c4);
 }
 
-.contentItem h3{
+.content-item h3{
     text-transform: uppercase;
 }
 
-.contentItem h5 {
+.content-item h5 {
     background: var(--c5);
     padding: 5px 15px;
     display: inline-block;
@@ -21,6 +21,6 @@
     margin-bottom: 10px;
     color: var(--stand);
 }
-.contentItem h4, .contentItem p{
+.content-item h4, .content-item p{
     color: var(--stand);
 }

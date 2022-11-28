@@ -38,3 +38,6 @@
     color: var(--c4);
     padding: 10px;
 }
+.modal a:hover{
+    color: var(--c4);
+}
