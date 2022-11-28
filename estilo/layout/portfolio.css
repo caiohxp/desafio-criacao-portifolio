@@ -17,7 +17,7 @@
     width: 100%;
     height: 100%;
 }
-.portfolio-link:hover > a > i{
+.portfolio-link > a:hover > i{
     color: var(--c4);
 }
 .portfolio-item:hover .portfolio-info .portfolio-link > a{
@@ -25,4 +25,12 @@
 }
 .portfolio-link > a{
     color: transparent;
+}
+.modal-body li{
+    list-style:disc;
+}
+.tec-icon{
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
 }

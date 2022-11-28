@@ -1,0 +1,7 @@
+@import url('../color.css');
+.logo::first-letter{
+    color: var(--c4);
+}
+.logo > span{
+    color: var(--c5);
+}

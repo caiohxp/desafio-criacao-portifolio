@@ -7,7 +7,10 @@
 html {
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
-	font-size: 14px;
+}
+body{
+    color: var(--stand);
+    background: var(--c2);
 }
 a {
 	text-decoration: none;

@@ -1,15 +1,13 @@
 @import url('estilo/base.css');
+@import url('estilo/layout/geral.css');
 @import url('estilo/layout/menu.css');
 @import url('estilo/layout/home.css');
+@import url('estilo/layout/curriculo.css');
 @import url('estilo/layout/contato.css');
 @import url('estilo/layout/sobre.css');
 @import url('estilo/layout/portfolio.css');
 @import url('estilo/color.css');
 
-body{
-    color: var(--stand);
-    background: var(--c2);
-}
 section{
     background: var(--c2);
     padding: 100px 0;
@@ -52,10 +50,5 @@ section{
     place-items: center;
 }
 footer{
-    width: 100%;
     background: var(--c1);
-}
-.footer-icon{
-    height: 10%;
-    width: 10%;
 }

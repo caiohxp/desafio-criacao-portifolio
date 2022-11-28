@@ -9,14 +9,6 @@
     font-size: medium;
     z-index: 10;
 }
-.menuLogo::first-letter{
-    color: var(--c4);
-}
-.menuLogo > span{
-    color: var(--c5);
-}
-.menuLista{
-}
 .nav-link{
     color: var(--stand);
     text-transform: uppercase;
