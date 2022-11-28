@@ -69,23 +69,25 @@
     border-right: none;
     border-left: none;
     animation: spinner 5000ms linear infinite;
+	position: relative;
 }
-.divhome-img:hover > .home-img{
+.divhome-img:hover > a{
 	background: linear-gradient(0deg, var(--c3),var(--c1), var(--c5));
 	color: var(--stand);
 	transition-duration: 2s;
 	letter-spacing: 0px;
 	filter: grayscale(0%);
 	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 .home-img{
     filter: grayscale(80%);
     border-radius: 50%;
     animation: spinner 5000ms linear infinite;
     animation-direction: reverse;
-	background-image: url('../../images/caio.jpeg');
-	height: 400px;
-	width: 400px;
 	display: grid;
 	place-items: center;
 	color: transparent;
@@ -125,7 +127,4 @@
 	}
 }
 @media (max-width: 1023px){
-    #home{
-        height: 150vh;
-    }
 }
