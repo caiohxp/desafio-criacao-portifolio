@@ -1,7 +1,12 @@
 const itensMenu = document.querySelectorAll('.nav-item');
 const section = Array.from(document.querySelectorAll('section'));
 const cor = "#14FFEC"
-window.addEventListener("scroll", (event) => {
+window.addEventListener("load", scrollspy);
+window.addEventListener("scroll", scrollspy);
+window.onresize = function () {
+    location.reload();
+};
+function scrollspy(){
     let scroll = this.scrollY;
     if (scroll < heightSections(1)) {
         itensMenu.forEach((i, n) => {
@@ -33,11 +38,7 @@ window.addEventListener("scroll", (event) => {
             n === 6 ? i.style.color = cor : i.style.color = "#fff"
         })
     }
-});
-window.onresize = function () {
-    location.reload();
-};
-
+}
 function heightSections(x) {
     return section.slice(0, x).reduce((a, b) => {
         return a + b.clientHeight

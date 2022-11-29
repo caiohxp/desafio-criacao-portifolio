@@ -45,10 +45,10 @@
         align-items: flex-start;
         justify-content: center;
     }
-    .menu.active .menuLista{
+    .menu.active .menu-lista{
         align-items: center;
     }
-    .menu.active .menuLista .menuItem{
+    .menu.active .menu-lista .nav-item{
         padding: 15px 10px;
     }
     #m-check {
@@ -57,7 +57,7 @@
     .label{
         cursor: pointer;
     }
-    .stop, #menuDropdown1, #menuDropdown2, #menuDropdown3 {
+    .stop, #menu-dropdown1, #menu-dropdown2, #menu-dropdown3 {
         width: 40px;
         height: 7px;
         transition: 0.3s;
@@ -65,7 +65,7 @@
         border-radius: 3px;
         cursor: pointer;
     }
-    #menuDropdown2{
+    #menu-dropdown2{
         margin: 7px 0;
         transition-delay: 0.3s;
     }
