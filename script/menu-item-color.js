@@ -1,6 +1,6 @@
 const itensMenu = document.querySelectorAll('.nav-item');
 const section = Array.from(document.querySelectorAll('section'));
-const cor = "#14FFEC"
+const cor = "#14FFEC";
 window.addEventListener("load", scrollspy);
 window.addEventListener("scroll", scrollspy);
 window.onresize = function () {
