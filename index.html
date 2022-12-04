@@ -154,51 +154,66 @@
                     </div>
                 </div>
                 <div class="col-lg-6 d-flex align-items-center">
-                    <form class="form">
-                        <div class="row gy-4">
-                            <div class="col-md-6 textbox">
-                                <input type="text" id="nome" name="name" class="formField formFieldDados form-control"
-                                    placeholder="Seu Nome" required>
-                                <label>Nome</label>
-                            </div>
+                    <form class="form row gy-4" onsubmit="enviarMensagem()">
+                        <div class="col-md-6 textbox">
+                            <input type="text" id="nome" name="name" class="formField formFieldDados form-control"
+                                placeholder="Seu Nome" required>
+                            <label>Nome</label>
+                        </div>
 
-                            <div class="col-md-6 textbox">
-                                <input type="text" id="email" class="formField formFieldDados form-control" name="email"
-                                    placeholder="Seu Email" required>
-                                <label>Email</label>
-                            </div>
+                        <div class="col-md-6 textbox">
+                            <input type="text" id="email" class="formField formFieldDados form-control" name="email"
+                                placeholder="Seu Email" required>
+                            <label>Email</label>
+                        </div>
 
-                            <div class="col-md-12">
-                                <input type="text" id="assunto" class="formField form-control" name="subject" placeholder="Assunto"
-                                    required>
-                            </div>
+                        <div class="col-md-12">
+                            <input type="text" id="assunto" class="formField form-control" name="subject"
+                                placeholder="Assunto" required>
+                        </div>
 
-                            <div class="col-md-12">
-                                <textarea id="mensagem" class="formField form-control" name="message" rows="6" placeholder="Mensagem"
-                                    required></textarea>
-                            </div>
-                            <div class="d-flex flex-column justify-content-between buttons">
-                                <button onclick="enviarMensagem()" class="buttonForm bgCyan letraCyan" type="submit">Enviar<i
-                                        class="bi bi-send"></i></button>
-                                <input class="buttonForm bgCrimson letraCrimson" type="reset" value="Limpar">
-                                <button class="buttonForm bg-dark" data-bs-toggle="modal"
-                                    data-bs-target="#messages-modal"><i class="bi bi-envelope"></i></button>
-                            </div>
+                        <div class="col-md-12">
+                            <textarea id="mensagem" class="formField form-control" name="message" rows="6"
+                                placeholder="Mensagem" required></textarea>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between buttons">
+                            <button class="buttonForm bgCyan letraCyan" type="submit">Enviar<i
+                                    class="bi bi-send"></i></button>
+                            <input class="buttonForm bgCrimson letraCrimson" type="reset" value="Limpar">
+                            <button class="buttonForm bg-dark" data-bs-toggle="modal" data-bs-target="#messages-modal"
+                                type="button"><i class="bi bi-envelope"></i></button>
                         </div>
                 </div>
                 </form>
             </div>
         </div>
         </div>
+        <!-- Modal Mensagens -->
         <div class="modal fade" id="messages-modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content bg-dark">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Caixa de Mensagens</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Caixa de Mensagens <i class="bi bi-envelope"></i></h1>
                         <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
                     </div>
-                    <div class="modal-body row d-flex align-items-center">
-                        mensagens aqui
+                    <div class="modal-body d-flex align-items-center flex-column">
+                        <table class="mb-4">
+                            <thead>
+                                <tr>
+                                    <th>Remetente</th>
+                                    <th>Assunto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                        <p>Não há mensagens</p>
+                        <hr>
+                        <form onsubmit="removeAllMessages()">
+                            <button type="submit" class="btn btn-danger">Limpar
+                                Todas as
+                                Mensagens</button>
+                        </form>
                     </div>
                 </div>
             </div>
