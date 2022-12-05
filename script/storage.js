@@ -18,14 +18,22 @@ const modal = document.querySelector('#messages-modal .modal-dialog .modal-conte
 const tbody = document.querySelector('#messages-modal .modal-dialog .modal-content .modal-body table tbody');
 const p = document.querySelector('#messages-modal .modal-dialog .modal-content .modal-body p');
 const messageList = JSON.parse(localStorage.getItem("dados"));
-messageList.forEach(mensagem => {
+messageList.forEach(mensagemItem => {
     const tr = document.createElement('tr');
     const assunto = document.createElement('td');
     const nome = document.createElement('td');
-    assunto.innerHTML = mensagem.assunto;
-    nome.innerHTML = mensagem.nome;
+    const mensagem = document.createElement('div');
+    mensagem.classList.toggle("message-open--display");
+    tr.addEventListener("click", () => {
+        tr.classList.toggle("message-open");
+        mensagem.classList.toggle("message-open--display");
+    })
+    assunto.innerHTML = mensagemItem.assunto;
+    nome.innerHTML = mensagemItem.nome;
+    mensagem.innerHTML = mensagemItem.mensagem;
     tr.appendChild(nome);
     tr.appendChild(assunto);
+    tr.appendChild(mensagem);
     tbody.appendChild(tr);
-    modal.removeChild(p)
+    modal.removeChild(p);
 });
