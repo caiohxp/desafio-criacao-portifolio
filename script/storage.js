@@ -19,21 +19,26 @@ const tbody = document.querySelector('#messages-modal .modal-dialog .modal-conte
 const p = document.querySelector('#messages-modal .modal-dialog .modal-content .modal-body p');
 const messageList = JSON.parse(localStorage.getItem("dados"));
 messageList.forEach(mensagemItem => {
-    const tr = document.createElement('tr');
+    const trcabecalho = document.createElement('tr');
+    const trmessage = document.createElement('tr'); 
     const assunto = document.createElement('td');
     const nome = document.createElement('td');
-    const mensagem = document.createElement('div');
+    const mensagem = document.createElement('td');
     mensagem.classList.toggle("message-open--display");
-    tr.addEventListener("click", () => {
-        tr.classList.toggle("message-open");
+    trcabecalho.addEventListener("click", () => {
+        trcabecalho.classList.toggle("message-open");
         mensagem.classList.toggle("message-open--display");
     })
+    assunto.setAttribute("colspan", "1");
+    nome.setAttribute("colspan", "1");
+    mensagem.setAttribute("colspan", "2");
     assunto.innerHTML = mensagemItem.assunto;
     nome.innerHTML = mensagemItem.nome;
     mensagem.innerHTML = mensagemItem.mensagem;
-    tr.appendChild(nome);
-    tr.appendChild(assunto);
-    tr.appendChild(mensagem);
-    tbody.appendChild(tr);
+    trcabecalho.appendChild(nome);
+    trcabecalho.appendChild(assunto);
+    trmessage.appendChild(mensagem);
+    tbody.appendChild(trcabecalho);
+    tbody.appendChild(trmessage);
     modal.removeChild(p);
 });

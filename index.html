@@ -38,7 +38,7 @@
     </header>
     <section id="home" class="container d-flex justify-content-around align-items-center flex-wrap">
         <div class="divhome-img">
-            <img class="home-img" src="images/caio.jpeg" alt="">
+            <img class="home-img" src="images/caio.jpeg" alt="Get Started">
             <a href="#sobre"></a>
         </div>
         <div class="homecontainer">
@@ -193,7 +193,8 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content bg-dark">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Caixa de Mensagens <i class="bi bi-envelope"></i></h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Caixa de Mensagens <i
+                                class="bi bi-envelope"></i></h1>
                         <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
                     </div>
                     <div class="modal-body d-flex align-items-center flex-column">
@@ -209,10 +210,28 @@
                         </table>
                         <p>Não há mensagens</p>
                         <hr>
+                        <button type="submit" class="btn btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#limpar-modal">Limpar
+                            Todas as
+                            Mensagens</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Limpar Mensagens -->
+        <div class="modal fade" id="limpar-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Você tem certeza que deseja limpar todas as
+                            mensagens?</h1>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center flex-column">
                         <form onsubmit="removeAllMessages()">
-                            <button type="submit" class="btn btn-danger">Limpar
-                                Todas as
-                                Mensagens</button>
+                            <input type="submit" class="btn bgCrimson letraCrimson" value="Sim">
+                            <input type="button" class="btn btn-secondary letraCyan" data-bs-toggle="modal"
+                            data-bs-target="#messages-modal" value="Cancelar">
                         </form>
                     </div>
                 </div>
@@ -333,7 +352,7 @@
                     </div>
                     <div
                         class="portfolio-info d-flex flex-column justify-content-center align-items-center text-center">
-                        <h2>Meu Repositório</h3>
+                        <h2>Meu Repositório</h2>
                             <div class="portfolio-link">
                                 <a href="https://github.com/caiohxp" target="_blank" title="Repositório caiohxp"><i
                                         class="bi bi-link fs-1"></i></a>
@@ -346,7 +365,7 @@
                     </div>
                     <div
                         class="portfolio-info d-flex flex-column justify-content-center align-items-center text-center">
-                        <h2>IRC</h4>
+                        <h2>IRC</h2>
                             <div class="portfolio-link">
                                 <a href="images/irc.png" title="Interactive Rating Component" data-bs-toggle="modal"
                                     data-bs-target="#irc-modal"><i class="bi bi-plus fs-1"></i></a>
@@ -362,7 +381,7 @@
                     </div>
                     <div
                         class="portfolio-info d-flex flex-column justify-content-center align-items-center text-center">
-                        <h2>Four</h4>
+                        <h2>Four</h2>
                             <div class="portfolio-link">
                                 <a href="images/four.png" title="Four" data-bs-toggle="modal"
                                     data-bs-target="#four-modal"><i class="bi bi-plus fs-1"></i></a>
@@ -378,7 +397,7 @@
                     </div>
                     <div
                         class="portfolio-info d-flex flex-column justify-content-center align-items-center text-center">
-                        <h2>Inferno de Dente</h4>
+                        <h2>Inferno de Dente</h2>
                             <div class="portfolio-link">
                                 <a href="#" title="Inferno de Dente" data-bs-toggle="modal"
                                     data-bs-target="#inferno-de-dente-modal"><i class="bi bi-plus fs-1"></i></a>
@@ -392,7 +411,7 @@
                     </div>
                     <div
                         class="portfolio-info d-flex flex-column justify-content-center align-items-center text-center">
-                        <h2>API Contatos</h4>
+                        <h2>API Contatos</h2>
                             <div class="portfolio-link">
                                 <a href="#" title="Four" data-bs-toggle="modal" data-bs-target="#api-contatos-modal"><i
                                         class="bi bi-plus fs-1"></i></a>
