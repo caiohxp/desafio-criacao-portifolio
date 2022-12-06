@@ -8,7 +8,7 @@ function enviarMensagem() {
     var mensagens = localStorage.getItem("dados") ? JSON.parse(localStorage.getItem("dados")) : [];
     mensagens.push(dados);
     localStorage.setItem("dados", JSON.stringify(mensagens));
-    alert("Mensagem Enviada");
+    alert("Mensagem Enviada!");
 }
 function removeAllMessages() {
     localStorage.removeItem("dados");
@@ -23,21 +23,26 @@ messageList.forEach(mensagemItem => {
     const trmessage = document.createElement('tr'); 
     const assunto = document.createElement('td');
     const nome = document.createElement('td');
-    const mensagem = document.createElement('td');
-    mensagem.classList.toggle("message-open--display");
+    const corpomensagem = document.createElement('td');
+    const email = document.createElement('p');
+    const mensagem = document.createElement('p');
+    corpomensagem.classList.toggle("message-open--display");
     trcabecalho.addEventListener("click", () => {
         trcabecalho.classList.toggle("message-open");
-        mensagem.classList.toggle("message-open--display");
+        corpomensagem.classList.toggle("message-open--display");
     })
     assunto.setAttribute("colspan", "1");
     nome.setAttribute("colspan", "1");
-    mensagem.setAttribute("colspan", "2");
-    assunto.innerHTML = mensagemItem.assunto;
-    nome.innerHTML = mensagemItem.nome;
-    mensagem.innerHTML = mensagemItem.mensagem;
+    corpomensagem.setAttribute("colspan", "2");
+    assunto.innerText = mensagemItem.assunto;
+    nome.innerText = mensagemItem.nome;
+    email.innerText = mensagemItem.email;
+    mensagem.innerText = mensagemItem.mensagem;
     trcabecalho.appendChild(nome);
     trcabecalho.appendChild(assunto);
-    trmessage.appendChild(mensagem);
+    corpomensagem.appendChild(email);
+    corpomensagem.appendChild(mensagem);
+    trmessage.appendChild(corpomensagem);
     tbody.appendChild(trcabecalho);
     tbody.appendChild(trmessage);
     modal.removeChild(p);
