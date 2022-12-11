@@ -21,7 +21,7 @@
 }
 .nav-item:hover{
     border-radius: 5px;
-    border: 1px solid var(--c5);
+    border: 1px solid var(--c4);
     cursor: pointer;
 }
 .colorActive{

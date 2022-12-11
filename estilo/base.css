@@ -21,14 +21,18 @@ li{
 }
 .bgCrimson{
 	background: var(--c5);
+	color: var(--stand);
 }
 .bgCyan{
 	background: var(--c3);
+	color: var(--stand);
 }
 .letraCrimson:hover{
+	border: 3px solid crimson;
 	color: var(--c5);
 }
 .letraCyan:hover{
+	border: 3px solid var(--c4);
 	color: var(--c4);
 }
 .letraC3{

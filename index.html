@@ -26,7 +26,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <div class="navbar-nav ms-auto menu-lista">
-                    <a class="nav-item nav-link active" href="#home">Home</a>
+                    <a class="nav-item nav-link" href="#home">Home</a>
                     <a class="nav-item nav-link " href="#sobre">Sobre</a>
                     <a class="nav-item nav-link " href="#contato">Contato</a>
                     <a class="nav-item nav-link " href="#formacao">Formação</a>
@@ -178,7 +178,7 @@
                             <button class="buttonForm bgCyan letraCyan" type="submit">Enviar<i
                                     class="bi bi-send"></i></button>
                             <input class="buttonForm bgCrimson letraCrimson" type="reset" value="Limpar">
-                            <button class="buttonForm bg-dark" data-bs-toggle="modal" data-bs-target="#messages-modal"
+                            <button class="buttonForm buttonMessageBox" data-bs-toggle="modal" data-bs-target="#messages-modal"
                                 type="button"><i class="bi bi-envelope"></i></button>
                         </div>
                 </div>
@@ -208,7 +208,7 @@
                         </table>
                         <p>Não há mensagens</p>
                         <hr>
-                        <button type="submit" class="btn btn-danger" data-bs-toggle="modal"
+                        <button type="submit" class="btn bgCrimson letraCrimson" data-bs-toggle="modal"
                             data-bs-target="#limpar-modal">Limpar
                             Todas as
                             Mensagens</button>
@@ -228,7 +228,7 @@
                     <div class="modal-body d-flex align-items-center flex-column">
                         <form onsubmit="removeAllMessages()">
                             <input type="submit" class="btn bgCrimson letraCrimson" value="Sim">
-                            <input type="button" class="btn btn-secondary letraCyan" data-bs-toggle="modal"
+                            <input type="button" class="btn buttonMessageBox" data-bs-toggle="modal"
                             data-bs-target="#messages-modal" value="Cancelar">
                         </form>
                     </div>
