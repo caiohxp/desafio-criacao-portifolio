@@ -37,6 +37,7 @@ messageList.forEach(mensagemItem => {
     assunto.innerText = mensagemItem.assunto;
     nome.innerText = mensagemItem.nome;
     email.innerText = mensagemItem.email;
+    email.style.fontWeight = "700";
     mensagem.innerText = mensagemItem.mensagem;
     trcabecalho.appendChild(nome);
     trcabecalho.appendChild(assunto);
