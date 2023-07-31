@@ -432,6 +432,20 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="images/mightyn8.png" class="img-fluid" alt="">
+                    </div>
+                    <div
+                        class="portfolio-info d-flex flex-column justify-content-center align-items-center text-center">
+                        <h2>Mighty Number 8</h2>
+                        <div class="portfolio-link">
+                            <a href="#" title="Mighty Number 8" data-bs-toggle="modal"
+                                data-bs-target="#mighty8-modal"><i class="bi bi-plus fs-1"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Modais -->
@@ -469,12 +483,52 @@
                         </div>
                         <div class="col-lg-1">
                             <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#one-page-modal"><i class="bi bi-chevron-right"></i></button>
+                                data-bs-target="#mighty8-modal"><i class="bi bi-chevron-right"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Modal Mighty Number 8 -->
+        <div class="modal fade" id="mighty8-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5">Mighty Number 8</h1>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body row d-flex align-items-center">
+                        <div class="col-lg-1">
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                                data-bs-target="#conversor-modal"><i class="bi bi-chevron-left"></i></button>
+                        </div>
+                        <div class="col-lg-10 d-flex justify-content-center flex-column align-items-center">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/9XIqij1-qHw"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            <p>Jogo de plataforma feito em Unity para o trabalho final da matéria de Computação Gráfica
+                            </p>
+                            <div class="modal-links">
+                                <a href="https://github.com/caiohxp/MightyN8" target="_blank"><i
+                                        class="bi bi-github fs-1"></i></a>
+                                <a href="https://caiohxp.github.io/" target="_blank"><i class="bi bi-link fs-1"></i></a>
+                            </div>
+                            <h4>Tecnologias utilizadas:</h4>
+                            <div>
+                                <button type="button" class="btn bgCyan" data-bs-toggle="modal"
+                                    data-bs-target="#c-sharp-modal">C#</button>
+                                <button type="button" class="btn bgCyan" data-bs-toggle="modal"
+                                    data-bs-target="#unity-modal">Unity</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                                data-bs-target="#one-page-modal"><i class="bi bi-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Modal One Page -->
         <div class="modal fade" id="one-page-modal" tabindex="-1" aria-hidden="true">
@@ -515,7 +569,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         </div>
         <!-- Modal IRC -->
         <div class="modal fade" id="irc-modal" tabindex="-1" aria-hidden="true">
@@ -846,19 +899,23 @@
                         <h5>Contras</h5>
                         <ul></ul>
                         <hr>
-                        <p>Exemplo da Sintaxe do Sass(SCSS):</p>
-                        <p>$cor-primaria: #3bbfce;<br>$margem: 16px;<br>.content-navigation {</p>
-                        <p class="ps-4">border-color: $cor-primaria;<br>
-                            color: darken($cor-primaria, 10%);</p>
-                        <p>}</p>
-                        <p>.border {</p>
-                        <p class="ps-4">padding: $margem / 2;<br>
-                            margin: $margem / 2;<br>
-                            border-color: $cor-primaria;</p>
-                        <p>}</p>
+                        <h5>Exemplo da Sintaxe do Sass(SCSS):</h5>
+                        <pre class="code">
+$cor-primaria: #3bbfce;
+$margem: 16px;
+.content-navigation {
+    border-color: $cor-primaria;
+    color: darken($cor-primaria, 10%);
+}
+.border {
+    padding: $margem / 2;
+    margin: $margem / 2;
+    border-color: $cor-primaria;
+}
+                        </pre>
                     </div>
                     <div class="modal-footer d-flex justify-content-start">
-                        <p>Projetos:</p>
+                        Projetos:</p>
                         <button type="button" class="btn bgCyan" data-bs-toggle="modal"
                             data-bs-target="#one-page-modal">One Page Site</button>
                     </div>
@@ -923,14 +980,14 @@
                         </ul>
                         <hr>
                         <p>Exemplo de Código em JavaScript</p>
-                        <code class="code">
-                            function soma(a, b) {<br>
-                                return a + b;<br>
-                            }<br>
+                        <pre class="code">
+function soma(a, b) {
+    return a + b;
+}
 
-                              const resultado = soma(a, b);<br>
-                              console.log(resultado); // Output: 25<br>
-                        </code>
+    const resultado = soma(a, b);
+    console.log(resultado); // Output: 25
+                        </pre>
                     </div>
                     <div class="modal-footer d-flex justify-content-start">
                         <p>Projetos:</p>
@@ -1211,11 +1268,11 @@
                             <li>Networking.</li>
                         </ul>
                         <p>Exemplo de código em C:</p>
-                        <code class="code">
-                            int main(void)<br>{<br>
-                            printf("Olá Mundo!");<br>
-                            }<br>
-                        </code>
+                        <pre class="code">
+int main(void){
+    printf("Olá Mundo!");
+}
+</pre>
                     </div>
                     <div class="modal-footer d-flex justify-content-start">
                         <p>Projetos:</p>
@@ -1243,6 +1300,141 @@
                         <p>Projetos:</p>
                         <button type="button" class="btn bgCyan" data-bs-toggle="modal"
                             data-bs-target="#inferno-de-dente-modal">Inferno de Dente</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Unity -->
+        <div class="modal fade" id="unity-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"><a
+                            href="https://unity.com/pt" target="_blank">Unity Engine </a><img
+                            src="images/unity.png" class="tec-icon" alt=""></h1>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        Unity é uma popular engine de desenvolvimento de jogos que permite criar jogos 2D e 3D para
+                        diversas plataformas, como PC, consoles, dispositivos móveis e até mesmo realidade virtual. É
+                        amplamente utilizado na indústria de jogos e possui uma grande comunidade de desenvolvedores e
+                        recursos disponíveis.
+                        <div class="d-flex">
+                            <p class="me-2 fs-5">Acesse o site oficial:</p>
+                            <a href="https://unity.com/pt" target="_blank" class="fs-5">unity.com/pt</a>
+                        </div>
+                        <hr>
+                        <h5>Prós</h5>
+                        <ul>
+                            <li>Multiplataforma: Unity oferece suporte a várias plataformas, o que significa que você
+                                pode
+                                desenvolver um jogo e lançá-lo em diferentes dispositivos, economizando tempo e esforço.
+                            </li>
+                            <li>Grande comunidade e recursos: Unity possui uma comunidade ativa de desenvolvedores e uma
+                                vasta quantidade de tutoriais, documentação e assets disponíveis, o que facilita o
+                                aprendizado e o desenvolvimento de jogos.</li>
+                            <li>Versatilidade: Unity é uma engine versátil que pode ser usada tanto para criar jogos
+                                simples
+                                como para projetos mais complexos e ambiciosos. Além disso, permite a integração de
+                                várias
+                                ferramentas e plugins de terceiros.</li>
+                        </ul>
+                        <hr>
+                        <h5>Contras</h5>
+                        <ul>
+                            <li>Desempenho: Dependendo do tipo de jogo e da quantidade de assets, o desempenho do Unity
+                                pode
+                                ser afetado, especialmente em dispositivos mais antigos ou com hardware limitado.</li>
+                            <li>Licenciamento: Embora o Unity seja gratuito para uso pessoal ou pequenos projetos, a
+                                licença
+                                pode ficar mais cara à medida que você desenvolve jogos comerciais maiores e com mais
+                                receita.</li>
+                            <li>Aprendizado inicial: Para iniciantes, a curva de aprendizado pode ser um pouco íngreme,
+                                especialmente se você nunca trabalhou com desenvolvimento de jogos ou programação antes.
+                                No
+                                entanto, com dedicação e prática, é possível dominar a engine.</li>
+                        </ul>
+                        <p>Exemplo de código utilizando a plataforma unity:</p>
+                        <pre class="code">
+using UnityEngine;
+public class MovimentoHorizontal : MonoBehaviour
+{
+    public float speed = 5f;
+    private Rigidbody2D rb;
+    private void Start(){
+        rb = GetComponent<Rigidbody2D>();
+    }
+    private void Update(){
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        rb.velocity = new Vector2(moveHorizontal * speed, rb.velocity.y);
+    }
+}
+                        </pre>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-start">
+                        <p>Projetos:</p>
+                        <button type="button" class="btn bgCyan" data-bs-toggle="modal"
+                            data-bs-target="#mighty8-modal">Mighty Number 8</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal C# -->
+        <div class="modal fade" id="c-sharp-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"><a
+                                href="https://docs.microsoft.com/pt-br/dotnet/csharp/" target="_blank">C# <img
+                                    src="images/c-sharp.png" class="tec-icon" alt=""></a></h1>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>O C# (C Sharp) é uma linguagem de programação moderna e orientada a objetos desenvolvida pela
+                            Microsoft. Ela faz parte do conjunto de tecnologias da plataforma .NET e é amplamente
+                            utilizada para desenvolvimento de aplicativos, jogos, web, entre outros.</p>
+                        <p>Para obter mais informações sobre a linguagem C# e sua documentação oficial, visite o site da
+                            Microsoft:</p>
+                        <a href="https://docs.microsoft.com/pt-br/dotnet/csharp/" target="_blank">C# - Documentação
+                            Oficial</a>
+                        <hr>
+                        <h5>Prós</h5>
+                        <ul>
+                            <li>Sintaxe simples e familiar, semelhante a outras linguagens de programação populares como
+                                C++ e Java.</li>
+                            <li>Ampla comunidade de desenvolvedores e suporte ativo da Microsoft, tornando mais fácil
+                                encontrar recursos e soluções para problemas.</li>
+                            <li>Grande quantidade de bibliotecas e frameworks disponíveis para acelerar o
+                                desenvolvimento de software.</li>
+                        </ul>
+
+                        <h5>Contras</h5>
+                        <ul>
+                            <li>Em alguns casos, o desempenho do C# pode ser menor do que linguagens de baixo nível,
+                                como C++.</li>
+                            <li>Limitações em desenvolvimento multiplataforma, pois o C# é mais voltado para o ambiente
+                                Windows e .NET.</li>
+                            <li>Exige o uso da plataforma .NET, o que pode aumentar o tamanho do executável do
+                                aplicativo em comparação com linguagens nativas.</li>
+                        </ul>
+                        <hr>
+                        <h5>Exemplo de Código em C#</h5>
+                        <pre class="code">
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Olá, mundo! Este é um exemplo simples em C#.");
+    }
+}
+    </pre>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-start">
+                        <p>Projetos:</p>
+                        <button type="button" class="btn bgCyan" data-bs-toggle="modal"
+                            data-bs-target="#mighty8-modal">Mighty Number 8</button>
                     </div>
                 </div>
             </div>
