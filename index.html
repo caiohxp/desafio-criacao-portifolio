@@ -191,7 +191,7 @@
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Caixa de Mensagens <i
                                 class="bi bi-envelope"></i></h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body d-flex align-items-center flex-column">
                         <table class="mb-4">
@@ -221,7 +221,7 @@
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Você tem certeza que deseja limpar todas as
                             mensagens?</h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body d-flex align-items-center flex-column">
                         <form onsubmit="removeAllMessages()">
@@ -446,6 +446,19 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6 portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="images/squonnects.png" class="img-fluid" alt="">
+                    </div>
+                    <div
+                        class="portfolio-info d-flex flex-column justify-content-center align-items-center text-center">
+                        <h2>SquareO</h2>
+                        <div class="portfolio-link">
+                            <a href="#" title="SquareO" data-bs-toggle="modal" data-bs-target="#squareo-modal"><i
+                                    class="bi bi-plus fs-1"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Modais -->
@@ -455,12 +468,12 @@
                 <div class="modal-content bg-dark">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Conversor de Moedas</h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body row d-flex align-items-center">
                         <div class="col-lg-1">
                             <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#api-contatos-modal"><i class="bi bi-chevron-left"></i></button>
+                                data-bs-target="#api-contatos-modal"><i class="bi bi-caret-left-fill"></i></button>
                         </div>
                         <div class="col-lg-10 d-flex justify-content-center flex-column align-items-center">
                             <img src="images/conversor-img.png" class="img-fluid" alt="One Page Site">
@@ -483,7 +496,7 @@
                         </div>
                         <div class="col-lg-1">
                             <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#mighty8-modal"><i class="bi bi-chevron-right"></i></button>
+                                data-bs-target="#mighty8-modal"><i class="bi bi-caret-right-fill"></i></button>
                         </div>
                     </div>
                 </div>
@@ -495,12 +508,12 @@
                 <div class="modal-content bg-dark">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5">Mighty Number 8</h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body row d-flex align-items-center">
                         <div class="col-lg-1">
                             <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#conversor-modal"><i class="bi bi-chevron-left"></i></button>
+                                data-bs-target="#conversor-modal"><i class="bi bi-caret-left-fill"></i></button>
                         </div>
                         <div class="col-lg-10 d-flex justify-content-center flex-column align-items-center">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/9XIqij1-qHw"
@@ -524,7 +537,46 @@
                         </div>
                         <div class="col-lg-1">
                             <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#one-page-modal"><i class="bi bi-chevron-right"></i></button>
+                                data-bs-target="#squareo-modal"><i class="bi bi-caret-right-fill"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal SquareO -->
+        <div class="modal fade" id="squareo-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5">SquareO</h1>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                    </div>
+                    <div class="modal-body row d-flex align-items-center">
+                        <div class="col-lg-1">
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                                data-bs-target="#mightyn8-modal"><i class="bi bi-caret-left-fill"></i></button>
+                        </div>
+                        <div class="col-lg-10 d-flex justify-content-center flex-column align-items-center">
+                            <img src="images/squonnects.png" class="img-fluid" alt="SquareO">
+                            <img src="images/squonnects-game.png" class="img-fluid" alt="SquareO">
+                            <p>Jogo mobile de ligar pontos e formar quadrados feito com Flutter
+                            </p>
+                            <div class="modal-links">
+                                <a href="https://github.com/caiohxp/square-game-in-flutter" target="_blank"><i
+                                        class="bi bi-github fs-1"></i></a>
+                                <a href="link/app-release.apk" target="_blank" download="squareo"><i class="bi bi-link fs-1"></i></a>
+                            </div>
+                            <h4>Tecnologias utilizadas:</h4>
+                            <div>
+                                <button type="button" class="btn bgCyan" data-bs-toggle="modal"
+                                    data-bs-target="#dart-modal">Dart</button>
+                                <button type="button" class="btn bgCyan" data-bs-toggle="modal"
+                                    data-bs-target="#flutter-modal">Flutter</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                                data-bs-target="#one-page-modal"><i class="bi bi-caret-right-fill"></i></button>
                         </div>
                     </div>
                 </div>
@@ -536,12 +588,12 @@
                 <div class="modal-content bg-dark">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">One Page Site</h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body row d-flex align-items-center">
                         <div class="col-lg-1">
                             <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#conversor-modal"><i class="bi bi-chevron-left"></i></button>
+                                data-bs-target="#squareo-modal"><i class="bi bi-caret-left-fill"></i></button>
                         </div>
                         <div class="col-lg-10 d-flex justify-content-center flex-column align-items-center">
                             <img src="images/one-page-site.png" class="img-fluid" alt="One Page Site">
@@ -564,7 +616,7 @@
                         </div>
                         <div class="col-lg-1">
                             <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#irc-modal"><i class="bi bi-chevron-right"></i></button>
+                                data-bs-target="#irc-modal"><i class="bi bi-caret-right-fill"></i></button>
                         </div>
                     </div>
                 </div>
@@ -576,12 +628,12 @@
                 <div class="modal-content bg-dark">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Interactive Rating Component</h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body row d-flex align-items-center">
                         <div class="col-lg-1">
                             <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#one-page-modal"><i class="bi bi-chevron-left"></i></button>
+                                data-bs-target="#one-page-modal"><i class="bi bi-caret-left-fill"></i></button>
                         </div>
                         <div class="col-lg-10 d-flex justify-content-center flex-column align-items-center">
                             <img src="images/irc.png" class="img-fluid" alt="Interactive Rating Component">
@@ -604,7 +656,7 @@
                         </div>
                         <div class="col-lg-1">
                             <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#four-modal"><i class="bi bi-chevron-right"></i></button>
+                                data-bs-target="#four-modal"><i class="bi bi-caret-right-fill"></i></button>
                         </div>
                     </div>
                 </div>
@@ -616,12 +668,12 @@
                 <div class="modal-content bg-dark">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Four</h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body row d-flex align-items-center">
                         <div class="col-lg-1">
                             <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#irc-modal"><i class="bi bi-chevron-left"></i></button>
+                                data-bs-target="#irc-modal"><i class="bi bi-caret-left-fill"></i></button>
                         </div>
                         <div class="col-lg-10 d-flex justify-content-center flex-column align-items-center">
                             <img src="images/four.png" class="img-fluid" alt="Four">
@@ -644,7 +696,7 @@
                         </div>
                         <div class="col-lg-1">
                             <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#inferno-de-dente-modal"><i class="bi bi-chevron-right"></i></button>
+                                data-bs-target="#inferno-de-dente-modal"><i class="bi bi-caret-right-fill"></i></button>
                         </div>
                     </div>
                 </div>
@@ -656,12 +708,12 @@
                 <div class="modal-content bg-dark">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Inferno de Dente</h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body row d-flex align-items-center">
                         <div class="col-lg-1">
                             <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#four-modal"><i class="bi bi-chevron-left"></i></button>
+                                data-bs-target="#four-modal"><i class="bi bi-caret-left-fill"></i></button>
                         </div>
                         <div class="col-lg-10 d-flex justify-content-center flex-column align-items-center">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/ZK-WuZoV0No"
@@ -684,7 +736,7 @@
                         </div>
                         <div class="col-lg-1">
                             <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#api-contatos-modal"><i class="bi bi-chevron-right"></i></button>
+                                data-bs-target="#api-contatos-modal"><i class="bi bi-caret-right-fill"></i></button>
                         </div>
                     </div>
                 </div>
@@ -696,12 +748,12 @@
                 <div class="modal-content bg-dark">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">API Contatos</h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body row d-flex align-items-center">
                         <div class="col-lg-1">
                             <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#inferno-de-dente-modal"><i class="bi bi-chevron-left"></i></button>
+                                data-bs-target="#inferno-de-dente-modal"><i class="bi bi-caret-left-fill"></i></button>
                         </div>
                         <div class="col-lg-10 d-flex justify-content-center flex-column align-items-center">
                             <img src="images/api-contatos-img.png" class="img-fluid" alt="Interactive Rating Component">
@@ -728,7 +780,7 @@
                         </div>
                         <div class="col-lg-1">
                             <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                data-bs-target="#conversor-modal"><i class="bi bi-chevron-right"></i></button>
+                                data-bs-target="#conversor-modal"><i class="bi bi-caret-right-fill"></i></button>
                         </div>
                     </div>
                 </div>
@@ -742,7 +794,7 @@
                         <h1 class="modal-title fs-5" id="exampleModalLabel"><a href="https://www.w3.org/html/"
                                 target="_blank">HTML<img class="tec-icon" src="images/html-icon.png" alt="HTML"></a>
                         </h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body">
                         <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML
@@ -810,7 +862,7 @@
                         <h1 class="modal-title fs-5" id="exampleModalLabel"><a
                                 href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">CSS <img
                                     class="tec-icon" src="images/css-icon.png" alt="CSS"></a></h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body">
                         <p>CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos
@@ -871,7 +923,7 @@
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel"><a href="https://sass-lang.com">Sass <img
                                     src="images/sass-icon.png" alt="SASS" class="tec-icon"></a> </h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body">
                         <p>Sass é uma linguagem de script que é interpretada ou compilada em Cascading Style Sheets
@@ -930,7 +982,7 @@ $margem: 16px;
                         <h1 class="modal-title fs-5" id="exampleModalLabel"><a href="https://www.javascript.com"
                                 target="_blank">JavaScript <img src="images/js-icon.png" alt="JavaScript"
                                     class="tec-icon"></a></h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body">
                         <p>JavaScript é uma linguagem de script orientada a objetos, multiplataforma. É uma linguagem
@@ -1011,7 +1063,7 @@ function soma(a, b) {
                         <h1 class="modal-title fs-5" id="exampleModalLabel"><a href="https://www.typescriptlang.org"
                                 target="_blank">TypeScript <img src="images/ts-icon.png" alt="TypeScript"
                                     class="tec-icon"></a></h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body">
                         <p>TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. É uma
@@ -1102,7 +1154,7 @@ function soma(a, b) {
                         <h1 class="modal-title fs-5" id="exampleModalLabel"><a href="https://pt-br.reactjs.org"
                                 target="_blank">React <img src="images/react-icon.png" alt="React" class="tec-icon"></a>
                         </h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body">
                         <p>O React (também denominado React.js ou ReactJS) é uma biblioteca front-end JavaScript de
@@ -1165,7 +1217,7 @@ function soma(a, b) {
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel"><a href="https://www.php.net"
                                 target="_blank">PHP <img src="images/php-icon.png" alt="PHP" class="tec-icon"></a></h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body">
                         <p>O nome PHP significa pré-processador de hipertexto e denota uma linguagem de script do lado
@@ -1233,7 +1285,7 @@ function soma(a, b) {
                         <h1 class="modal-title fs-5" id="exampleModalLabel"><a
                                 href="https://www.iso.org/standard/74528.html" target="_blank">Linguagem C <img
                                     src="images/linguagemc-icon.png" class="tec-icon" alt=""></a></h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body">
                         <p>C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa,
@@ -1288,7 +1340,7 @@ int main(void){
                 <div class="modal-content bg-dark">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Biblioteca SDL</h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body">
                         SDL, ou Simple DirectMedia Layer, é uma biblioteca multimídia multiplataforma, livre e de código
@@ -1309,10 +1361,10 @@ int main(void){
             <div class="modal-dialog">
                 <div class="modal-content bg-dark">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel"><a
-                            href="https://unity.com/pt" target="_blank">Unity Engine </a><img
-                            src="images/unity.png" class="tec-icon" alt=""></h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"><a href="https://unity.com/pt"
+                                target="_blank">Unity Engine </a><img src="images/unity.png" class="tec-icon" alt="">
+                        </h1>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body">
                         Unity é uma popular engine de desenvolvimento de jogos que permite criar jogos 2D e 3D para
@@ -1387,7 +1439,7 @@ public class MovimentoHorizontal : MonoBehaviour
                         <h1 class="modal-title fs-5" id="exampleModalLabel"><a
                                 href="https://docs.microsoft.com/pt-br/dotnet/csharp/" target="_blank">C# <img
                                     src="images/c-sharp.png" class="tec-icon" alt=""></a></h1>
-                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close">X</button>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
                     </div>
                     <div class="modal-body">
                         <p>O C# (C Sharp) é uma linguagem de programação moderna e orientada a objetos desenvolvida pela
@@ -1435,6 +1487,130 @@ class Program
                         <p>Projetos:</p>
                         <button type="button" class="btn bgCyan" data-bs-toggle="modal"
                             data-bs-target="#mighty8-modal">Mighty Number 8</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Dart -->
+        <div class="modal fade" id="dart-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"><a
+                                href="https://dart.dev/" target="_blank">Dart <img
+                                    src="images/dart.png" class="tec-icon" alt=""></a></h1>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Dart é uma linguagem de programação desenvolvida pela Google. Ela é conhecida por ser
+                            utilizada no desenvolvimento de aplicações web (através do framework Flutter) e em
+                            servidores.</p>
+
+                        <h5>Prós de Dart</h5>
+                        <ul>
+                            <li>Sintaxe moderna e limpa.</li>
+                            <li>Tipagem estática opcional, o que ajuda a evitar erros em tempo de execução.</li>
+                            <li>Permite o desenvolvimento de aplicações tanto para web quanto para mobile com o uso do
+                                Flutter.</li>
+                            <li>Hot Reload: permite ver as alterações imediatamente durante o desenvolvimento.</li>
+                            <li>Grande comunidade e documentação sólida.</li>
+                        </ul>
+
+                        <h5>Contras de Dart</h5>
+                        <ul>
+                            <li>Menos popular do que algumas outras linguagens.</li>
+                            <li>Menos bibliotecas e ferramentas disponíveis em comparação com linguagens mais
+                                estabelecidas.</li>
+                            <li>A curva de aprendizado pode ser um pouco íngreme para quem não está familiarizado com
+                                linguagens de tipagem estática.</li>
+                        </ul>
+
+                        <h5>Site Oficial</h5>
+                        <p>Para mais informações, você pode visitar o site oficial do Dart <a href="https://dart.dev/"
+                                target="_blank">dart.dev</a>.</p>
+
+                        <h5>Exemplo de Código em Dart</h5>
+                        <pre class="code">
+void main() {
+    print('Olá, mundo!');
+}
+                        </pre>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-start">
+                        <p>Projetos:</p>
+                        <button type="button" class="btn bgCyan" data-bs-toggle="modal"
+                            data-bs-target="#squareo-modal">SquareO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Flutter -->
+        <div class="modal fade" id="flutter-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"><a
+                                href="https://flutter.dev/" target="_blank">Flutter <img
+                                    src="images/flutter.png" class="tec-icon" alt=""></a></h1>
+                        <button type="button" class="bg-dark fs-5" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Flutter é um framework de código aberto desenvolvido pela Google para criar aplicativos
+                            nativos para diferentes plataformas a partir de um único código-base.</p>
+
+                        <h5>Prós de Flutter</h5>
+                        <ul>
+                            <li>Desenvolvimento rápido com Hot Reload: permite visualizar as alterações instantaneamente
+                                durante o desenvolvimento.</li>
+                            <li>UI rica e personalizável com widgets altamente flexíveis.</li>
+                            <li>Desenvolvimento multiplataforma: cria aplicativos para iOS, Android, Web e desktop a
+                                partir do mesmo código.</li>
+                            <li>Alto desempenho e aparência nativa.</li>
+                            <li>Grande comunidade e recursos de aprendizado.</li>
+                        </ul>
+
+                        <h5>Contras de Flutter</h5>
+                        <ul>
+                            <li>Arquivos de tamanho maiores do que aplicativos nativos, devido à inclusão do motor
+                                Flutter.</li>
+                            <li>Alguns recursos mais recentes podem demorar para serem suportados.</li>
+                            <li>A curva de aprendizado para criar layouts complexos pode ser íngreme para iniciantes.
+                            </li>
+                        </ul>
+
+                        <h5>Site Oficial</h5>
+                        <p>Para mais informações, você pode visitar o site oficial do Flutter <a href="https://flutter.dev/"
+                                target="_blank">flutter.dev</a>.</p>
+
+                        <h5>Exemplo de Código em Flutter</h5>
+                        <pre class="code">
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Exemplo Flutter'),
+        ),
+        body: Center(
+          child: Text('Olá, mundo!'),
+        ),
+      ),
+    );
+  }
+}
+  </pre>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-start">
+                        <p>Projetos:</p>
+                        <button type="button" class="btn bgCyan" data-bs-toggle="modal"
+                            data-bs-target="#squareo-modal">SquareO</button>
                     </div>
                 </div>
             </div>
